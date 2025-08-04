@@ -1,0 +1,61 @@
+{
+  "name": "@limitly/limitly-nextjs",
+  "version": "1.0.0",
+  "description": "Official Next.js SDK for Limitly - API Key management, plans, users and request validation optimized for server-side",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "example": "node examples/basic-usage.js",
+    "example:nextjs": "node examples/nextjs-middleware.js"
+  },
+  "keywords": [
+    "limitly",
+    "api",
+    "rate-limiting",
+    "api-keys",
+    "sdk",
+    "nextjs",
+    "typescript",
+    "server-side"
+  ],
+  "author": "Limitly Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limitlydev/limitly-nextjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/limitlydev/limitly-nextjs/issues"
+  },
+  "homepage": "https://github.com/limitlydev/limitly-nextjs#readme",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "next": ">=13.0.0"
+  }
+} 
